@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <name>damir</name>
+  <version>0.0.1</version>
+  <description>Meta package special for Damir.</description>
+  
+  <maintainer email="smk.robotics@gmail.com">Kirill Smirnov</maintainer>
+  <license>THE BEER-WARE LICENSE</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

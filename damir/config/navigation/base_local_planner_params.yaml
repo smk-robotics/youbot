@@ -1,0 +1,20 @@
+base_global_planner: navfn/NavfnROS
+base_local_planner: teb_local_planner/TebLocalPlannerROS
+
+planner_frequency: 10
+
+TebLocalPlannerROS:
+  max_vel_x: 0.4
+  max_vel_y: 0.4
+  max_vel_x_backwards: 0.4
+  min_vel_x: 0.05
+  min_vel_y: 0.05
+  max_vel_theta: 0.5
+  min_in_place_vel_theta: 0.25
+  min_turning_radius: 0.0
+ 
+  acc_lim_theta: 0.05
+  acc_lim_x: 0.05
+  acc_lim_y: 0.05
+
+  weight_kinematics_nh: 1

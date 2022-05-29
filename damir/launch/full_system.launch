@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find damir)/launch/simulation.launch"/>
+  <include file="$(find damir)/launch/localization.launch"/>
+  <include file="$(find damir)/launch/navigation.launch"/>
+  <include file="$(find damir)/launch/visualization.launch"/>
+  <!-- <node pkg="rostopic" type="rostopic" name="set_goal"
+        args="pub /move_base_simple/goal geometry_msgs/PoseStamped '{
+          header:
+          {
+            frame_id: 'map'
+          },
+          pose:
+          {
+            position:
+            {
+              x: -4.0,
+              y: 8.0,
+              z: 0.0
+            },
+            orientation:
+            {
+              x: 0.0,
+              y: 0.0,
+              z: 0.0,
+              w: 1.0
+            }
+          }
+        }' -r 0.5"/> -->
+  <node pkg="damir" type="navigation_node" name="damir_navigation_node" 
+        output="screen"/>
+</launch>
