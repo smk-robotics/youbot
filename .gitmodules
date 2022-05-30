@@ -1,0 +1,8 @@
+[submodule "youbot_simulation"]
+	path = youbot_simulation
+	url = https://github.com/Baray44/youbot_simulation.git
+	branch = noetic-devel
+[submodule "youbot_description"]
+	path = youbot_description
+	url = https://github.com/Baray44/youbot_description.git
+	branch = kinetic-devel
