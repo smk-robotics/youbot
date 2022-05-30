@@ -13,6 +13,10 @@ This repository contains youbot demonstration system.
 - Clone this repo to the previously created *src* directory:
 `git clone https://github.com/smk-robotics/youbot.git`
 
+## Updating git submodules
+
+`git submodule update --init --recursive`
+
 ## Installing dependencies
 
 - Switching to the previously created workspace folder:
@@ -22,7 +26,7 @@ This repository contains youbot demonstration system.
 `rosdep update`
 
 - Install dependencies:
-`rosdep install --from-paths src --ignore-src -y`
+`rosdep install --from-paths src --ignore-src -y --rosdistro melodic`
 
 ## Building workspace:
 
